@@ -1,0 +1,12 @@
+[package]
+name = "rust-quadtree-art"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+color-rs = "0.7.1"
+draw = "0.3.0"
+image = "0.24.5"
+imageproc = "0.23.0"
