@@ -4,8 +4,29 @@
 
 1. Clone the project
 2. Run the program
+```bash
+cargo run -- [input image filename] [options]
 ```
-cargo run [input image filename]
+
+## Options
+
+- `--max-depth <n>`: Maximum subdivision depth (default: 7)
+- `--color-threshold <f>`: Color distance threshold (default: 10.0)
+- `--size-threshold <n>`: Minimum quadrant size (default: 5)
+- `--output <file>`: Output filename (default: output.png)
+- `--log-level <level>`: Log level: error, warn, info, debug, trace (default: info)
+
+## Examples
+
+```bash
+# Basic usage
+cargo run -- input.jpg
+
+# High detail output
+cargo run -- input.jpg --max-depth 10 --color-threshold 5.0
+
+# Custom output
+cargo run -- input.jpg --output my_art.png
 ```
 
 ## About

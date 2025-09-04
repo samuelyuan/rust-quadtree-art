@@ -1,12 +1,14 @@
 [package]
 name = "rust-quadtree-art"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+description = "Generate quadtree art from images"
+license = "MIT"
 
 [dependencies]
-color-rs = "0.7.1"
-draw = "0.3.0"
-image = "0.24.5"
-imageproc = "0.23.0"
+image = "0.25"
+imageproc = "0.24"
+clap = { version = "4.0", features = ["derive"] }
+
+[dev-dependencies]
+tempfile = "3.0"
